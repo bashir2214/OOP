@@ -1,0 +1,20 @@
+#ifndef Darray_H
+#define Darray_H
+#include <iostream>
+using namespace std;
+
+class darray{
+    int* iptr{};
+    int size{};
+    int capacity{};
+    public:
+    darray();
+    void push_back(int);
+    darray& operator=(const darray&);
+    int getsize()const;
+    int operator[](int)const;
+    
+    ~darray();
+};
+ostream& operator <<(ostream& , const darray&);
+#endif
