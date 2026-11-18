@@ -53,6 +53,9 @@ int darray::getcapacity()const{
 int& darray:: operator[](int i){
    return iptr[i];
 }
+const int& darray:: operator[](int i)const{
+   return iptr[i];
+}
 ostream& operator <<(ostream& os ,  darray& obj){
     for(int i{};i<obj.getsize();i++){
     os << obj[i]<<" ";
