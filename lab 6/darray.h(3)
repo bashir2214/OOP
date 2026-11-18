@@ -16,8 +16,8 @@ class darray{
     int getsize()const;
     int getcapacity()const;
      int& operator[](int);
-    
+    const int& operator[](int)const;
     ~darray();
 };
-ostream& operator <<(ostream& ,  darray&);
+ostream& operator <<(ostream& ,  const darray&);
 #endif
